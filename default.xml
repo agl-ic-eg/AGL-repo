@@ -10,6 +10,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="iceg" fetch="https://github.com/agl-ic-eg/" />
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="master"/>
@@ -19,9 +20,9 @@
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <project name="meta-agl" remote="iceg" path="meta-agl" revision="master-rockchip" />
+  <project name="meta-agl-demo" remote="iceg" path="meta-agl-demo" revision="master-rockchip" />
+  <project name="meta-agl-devel" remote="iceg" path="meta-agl-devel" revision="master-rockchip" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
@@ -85,5 +86,8 @@
   <!-- Sancloud BSP layers -->
   <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="7ca1bf687945c01b7cbfea3174e4b10cd313f2d7" upstream="kirkstone"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="032a394e7569d1254cd17a0358475b986e64a5a4" upstream="master"/>
+
+  <!-- Rockchip NanoPC T6 -->
+  <project name="meta-rockchip" path="bsp/meta-rockchip" remote="iceg" revision="kirkstone-agl" />
 
 </manifest>
