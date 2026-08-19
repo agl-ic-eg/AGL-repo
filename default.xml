@@ -21,9 +21,10 @@
 
   <!-- AGL things. -->
   <project name="AGL/meta-agl" path="meta-agl" />
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
-
+  <!--  <project name="AGL/meta-agl-demo" path="meta-agl-demo" /> -->
+  <!--  <project name="AGL/meta-agl-devel" path="meta-agl-devel" /> -->
+  <project name="agl-ic-eg/meta-agl-demo" path="meta-agl-demo" remote="github" revision="master-slint" />
+  <project name="agl-ic-eg/meta-agl-devel" path="meta-agl-devel" remote="github" revision="master-slint" />
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
 
@@ -35,7 +36,6 @@
   <project name="meta-yocto" path="external/meta-yocto" remote="yocto" revision="24c24cef5d1523fefe43a3e3d34667b37ae551f3" upstream="wrynose" />
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="d97b5602d7f64422c94b7311466cda7f6b1962d5" upstream="wrynose" />
   <project name="meta-lts-mixins" path="external/meta-lts-mixins_rust" remote="yocto" revision="113341a44c841219a4062e59be6e617df199de14" upstream="wrynose/rust" />
-
 
   <!-- UPSTREAM COMPONENTS -->
 
@@ -67,6 +67,11 @@
   <!-- meta-ros -->
   <project name="ros/meta-ros" path="external/meta-ros" remote="github" revision="dbb05e0b4430cd26dc2a9973cc4d70bb46d6b354" upstream="wrynose"/>
 
+  <!-- meta-slint -->
+  <project name="slint-ui/meta-slint" path="external/meta-slint" remote="github" revision="9a364c888925fe9827cf9febfcd507cdedf129e3" upstream="main"/>
+
+  <!-- meta-rust-bin -->
+  <project name="rust-embedded/meta-rust-bin" path="external/meta-rust-bin" remote="github" revision="54721fa1c7a4edaba7fb63cdbcaf0c6253c5fa3a" upstream="master"/>
 
   <!-- BSPs -->
 
